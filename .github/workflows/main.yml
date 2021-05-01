@@ -43,7 +43,7 @@ jobs:
           # Path to DocherFile
           file: ./src/Dockerfile
           push: true
-          tags:
+          tags: |
             gomesdocker/api-bootcamp-produto:latest
-            gomesdocker/api-bootcamp-produto:v${{github.run_number}}
+            gomesdocker/api-bootcamp-produto:${{github.run_number}}
             
