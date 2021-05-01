@@ -45,5 +45,5 @@ jobs:
           push: true
           tags:
             gomesdocker/api-bootcamp-produto:latest
-            #gomesdocker/api-bootcamp-produto:
+            gomesdocker/api-bootcamp-produto:${{github.run_number}}
             
