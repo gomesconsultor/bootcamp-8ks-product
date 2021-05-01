@@ -29,11 +29,9 @@ jobs:
           # registry: optional
 
           # Username used to log again
-          username: gomesdocker
-          #$({secrets.DOCKERHUB_USER})
+          username: ${{secrets.DOCKERHUB_USER}}
           # Password or personal acess
-          password: idec29
-          #$({secrets.DOCKERHUB_PWD})
+          password: ${{secrets.DOCKERHUB_PWD}}
           # Log out from the Docker Registe
           #logout: optional , default
 
@@ -47,5 +45,5 @@ jobs:
           push: true
           tags:
             gomesdocker/api-bootcamp-produto:latest
-            gomesdocker/api-bootcamp-produto:${{github.run_number}}
+            #gomesdocker/api-bootcamp-produto:
             
