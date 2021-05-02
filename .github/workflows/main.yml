@@ -49,6 +49,7 @@ jobs:
             
   CD:
     runs-on: self-hosted
+    # Depende do JOB CI para executar
     needs: [CI]
     steps:
       - uses: actions/checkout@v2
