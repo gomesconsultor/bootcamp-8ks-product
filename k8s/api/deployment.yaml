@@ -14,7 +14,7 @@ spec:
       spec:
         containers:
           - name: api
-            image: gomesdocker/api-bootcamp-produto:${{github.run_number}}
+            image: gomesdocker/api-bootcamp-produto:latest
             ports:
               - containerPort: 8080
             env:
